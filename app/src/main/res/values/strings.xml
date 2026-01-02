@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Push-Up Counter</string>
+    <string name="push_ups">Push-Ups: %d</string>
+    <string name="camera_permission_required">Camera permission is required</string>
+    <string name="reset">Reset</string>
+    <string name="status_waiting">Get into push-up position</string>
+    <string name="status_ready">Ready! Start push-ups</string>
+    <string name="status_counting">Counting...</string>
+</resources>

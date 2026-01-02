@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.pushupcounter.app-mergeDebugResources-43:/layout/activity_main.xml",
+        "source": "com.pushupcounter.app-main-46:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-mergeDebugResources-43:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-main-46:\\layout\\activity_main.xml"
+    }
+]

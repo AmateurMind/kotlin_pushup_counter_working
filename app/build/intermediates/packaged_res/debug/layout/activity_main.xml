@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleX="-1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.pushupcounter.app.ui.GraphicOverlay
+        android:id="@+id/graphicOverlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/previewView"
+        app:layout_constraintBottom_toBottomOf="@id/previewView"
+        app:layout_constraintStart_toStartOf="@id/previewView"
+        app:layout_constraintEnd_toEndOf="@id/previewView" />
+
+    <!-- Large counter display at top -->
+    <TextView
+        android:id="@+id/counterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/push_ups"
+        android:textColor="#00FF00"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="8"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Status indicator -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_waiting"
+        android:textColor="#FFAA00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#99000000"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/counterText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TEST MODE PANEL -->
+    <LinearLayout
+        android:id="@+id/testModePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EE000000"
+        android:padding="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/statusText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🧪 TEST MODE"
+            android:textColor="#FFFF00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/angleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angle: 145°"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <SeekBar
+            android:id="@+id/angleSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="50"
+            android:max="175"
+            android:progress="145"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50° (down) ← → 175° (up)"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/simulateDownButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬇ DOWN (90°)"
+                android:backgroundTint="#FF6B6B"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/simulateUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬆ UP (160°)"
+                android:backgroundTint="#4CAF50" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/autoTestButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🤖 AUTO TEST (5 reps)"
+            android:backgroundTint="#2196F3"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/singleRepTestButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1️⃣ SINGLE REP TEST"
+            android:backgroundTint="#9C27B0"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/doubleCountTestButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔁 DOUBLE-COUNT TEST"
+            android:backgroundTint="#FF5722"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <!-- Bottom bar with buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#DD000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/testModeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🧪 TEST"
+            android:textSize="16sp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:backgroundTint="#FFA726"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:textSize="16sp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:backgroundTint="#FF4444" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-merged_res-44:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-main-46:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.pushupcounter.app-merged_res-44:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.pushupcounter.app-main-46:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-merged_res-44:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-main-46:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-merged_res-44:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-main-46:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-merged_res-44:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\suhai\\.gradle\\daemon\\8.9\\com.pushupcounter.app-main-46:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    }
+]

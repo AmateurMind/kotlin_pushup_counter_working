@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#1B5E20</color>
+    <color name="ic_launcher_foreground">#FFFFFF</color>
+    <string name="app_name">Push-Up Counter</string>
+    <string name="camera_permission_required">Camera permission is required</string>
+    <string name="push_ups">Push-Ups: %d</string>
+    <string name="reset">Reset</string>
+    <string name="status_counting">Counting...</string>
+    <string name="status_ready">Ready! Start push-ups</string>
+    <string name="status_waiting">Get into push-up position</string>
+</resources>
