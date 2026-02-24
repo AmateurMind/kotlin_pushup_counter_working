@@ -1,5 +1,7 @@
 # Push-Up Counter Android App
-
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=AmateurMind&repo=kotlin_pushup_counter_working&color=blue" />
+</p>
 A native Android application built with Kotlin that counts push-ups in real-time using on-device pose detection.
 
 ## Features
